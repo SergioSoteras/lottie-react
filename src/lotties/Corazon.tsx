@@ -39,7 +39,7 @@ const Corazon = () => {
     ],
   });
 
-  return <div id="corazon">{Animation}</div>;
+  return Animation;
 };
 
 export default Corazon;

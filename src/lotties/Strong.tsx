@@ -1,5 +1,4 @@
 import { useLottie, useLottieInteractivity } from "lottie-react";
-import sloth from "./sloth.json";
 import strong from "./weightlifter.json";
 
 

@@ -26,7 +26,7 @@ const options = {
       ],
     });
   
-    return <div id="caballo">{Animation}</div>;
+    return Animation;
   };
   
   export default Caballo;
