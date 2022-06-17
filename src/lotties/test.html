@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            color: green;
+        }
+        div {
+            text-align: center;
+            height: 1200px;
+        }
+       
+    </style>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+ 
+<body>
+    <div id="my-div">
+      <h1>GeeksforGeeks</h1>
+      <b>A Computer Science Portal for Geeks</b>
+    </div>
+ 
+    <script type="text/javascript">
+        window.addEventListener("DOMMouseScroll", handleScroll);
+        window.addEventListener("mousewheel", handleScroll);
+        window.addEventListener("click", handleScroll);
+
+        function wheelDistance(e) {
+            console.log(e);
+            if (!e) {
+                e = window.event;
+            }
+            var w = e.wheelDelta,
+                d = e.detail;
+            if (d) {
+                return -d / 3; // Firefox;
+            }
+ 
+            // IE, Safari, Chrome & other browsers
+            return w / 120;
+        }
+ 
+        function handleScroll(e) {
+            var delta = wheelDistance(e);
+            console.log(delta);
+            var time = 1000;
+            var distance = 200;
+ 
+            $('html, body').stop().animate({
+                scrollTop: $(window).scrollTop()
+                          - (distance * delta)
+            }, time);
+        }
+    </script>
+</body>
+ 
+</html>
