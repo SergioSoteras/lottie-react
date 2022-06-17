@@ -1,7 +1,7 @@
 import { useLottie, useLottieInteractivity } from "lottie-react";
 import like from "./likeButton.json";  
 import $ from "jquery";
-
+// BUSCANDO LA MANERA DE PASAR LA FUNCION JQUERY A REACT
 function handleScrollClick(e: any) {
   var delta = -1.5;
   console.log(delta);

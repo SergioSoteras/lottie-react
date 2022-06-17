@@ -14,7 +14,7 @@ const options = {
     animationData: strong,
   };
 
-  const Sloth = () => {
+  const Strong = () => {
     //PESAS
     const lottieObj = useLottie(options, style);
     const Animation = useLottieInteractivity({
@@ -33,4 +33,4 @@ const options = {
     return Animation;
   };
   
-  export default Sloth;
+  export default Strong;

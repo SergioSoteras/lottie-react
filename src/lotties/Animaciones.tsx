@@ -1,17 +1,17 @@
 import React from 'react';
-import Scroll from "./Scroll";
 import Jump from './Jump';
-import Sloth from './Sloth';
 import Squats from './Squats';
-import Walk from "./Walk";
+import Strong from './Strong';
+import Caballo from './Caballo';
+import Corazon from './Corazon';
 
 
 
 export const Animaciones = () => {
   return (<>
-  <Scroll/><Walk/>
+  <Corazon/><Caballo/>
   <div id='gym' style={{display:'flex',border:1,borderStyle:'solid'}}>
-      <Sloth/><Jump/><Squats/>
+      <Strong/><Jump/><Squats/>
   </div>
   </>
     
